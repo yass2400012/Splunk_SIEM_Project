@@ -32,6 +32,9 @@ index=* sourcetype=dns_sample | top fqdn, src_ip
 index=* sourcetype=dns_sample fqdn="maliciousdomain.com"
 
 
+
+
+
 ## Sample Queries Breakdown
 
 ➤ Search all DNS log entries
@@ -45,6 +48,9 @@ index=dns_index sourcetype=dns_sample
 ➤ Top 10 IPs querying suspicious domains
 ```spl
 index=dns_index sourcetype=dns_sample | top src_ip where fqdn="*.maliciousdomain.com"
+
+
+
 
 ##Screenshots
 
