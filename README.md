@@ -11,46 +11,48 @@ This project demonstrates the process of uploading, parsing, and analyzing DNS l
 
 ## 🔎 DNS Log Analysis in Splunk
 
-1. Search DNS Events
+### 1. Search DNS Events
 ```spl
 index=* sourcetype=dns_sample
+```
 
-2. Extract Relevant Fields Using Regex
+### 2. Extract Relevant Fields Using Regex
 ```spl
 index=* sourcetype=dns_sample | regex _raw="(?i)\\b(dns|domain|query|response|port 53)\\b"
+```
 
-3. Identify Anomalies (Query Spikes)
+### 3. Identify Anomalies (Query Spikes)
 ```spl
 index=* sourcetype=dns_sample | stats count by fqdn
+```
 
-4. Top Queried Domains and Source IPs
+### 4. Top Queried Domains and Source IPs
 ```spl
 index=* sourcetype=dns_sample | top fqdn, src_ip
+```
 
-5. Investigate Suspicious Domains
+### 5. Investigate Suspicious Domains
 ```spl
 index=* sourcetype=dns_sample fqdn="maliciousdomain.com"
+```
 
----
-
----
 
 ## Sample Queries Breakdown
 
 ➤ Search all DNS log entries
 ```spl
 index=dns_index sourcetype=dns_sample
+```
 
 ➤ Get count of each FQDN
 ```spl
-index=dns_index sourcetype=dns_sample 
+index=dns_index sourcetype=dns_sample
+```
 
 ➤ Top 10 IPs querying suspicious domains
 ```spl
 index=dns_index sourcetype=dns_sample | top src_ip where fqdn="*.maliciousdomain.com"
-
----
-
+```
 
 ##Screenshots
 
