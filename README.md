@@ -67,6 +67,11 @@ source="dns_sample_with_malicious.log" host="yass" sourcetype="dns_sample_with_m
 | Threat Hunting     | Identified anomalies and unusual domains        |
 | Query Development  | Created SPL searches for insight                |
 
+Analyzing DNS log files using Splunk SIEM enables security analysts to:
+Understand DNS activity
+Detect malicious behavior
+Investigate suspicious traffic
+
 
 ## 📸 Screenshots
 
@@ -84,7 +89,4 @@ source="dns_sample_with_malicious.log" host="yass" sourcetype="dns_sample_with_m
 
 
 ## Conclusion
-Analyzing DNS log files using Splunk SIEM enables security analysts to:
-Understand DNS activity
-Detect malicious behavior
-Investigate suspicious traffic
+Working with DNS log files in Splunk helped me better understand how DNS activity can reveal signs of suspicious or malicious behavior. This project gave me hands-on experience with log analysis, regex filtering, and using Splunk search queries—skills I’m continuing to build as I grow in cybersecurity.
