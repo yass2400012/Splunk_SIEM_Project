@@ -68,6 +68,20 @@ source="dns_sample_with_malicious.log" host="yass" sourcetype="dns_sample_with_m
 | Query Development  | Created SPL searches for insight                |
 
 
+## 📸 Screenshots
+
+### 🔹 Search DNS Events
+![Search DNS Events](project-screenshots/Search%20DNS%20Events.PNG)
+
+### 🔹 Extract Relevant Fields Using Regex
+![Extract Relevant Fields](project-screenshots/Extract%20Relevant%20Fields%20Using%20Regex.PNG)
+
+### 🔹 Extracting DNS Log Fields in Splunk
+![Extracting DNS Log Fields](project-screenshots/Extracting%20DNS%20Log%20Fields%20in%20Splunk.PNG)
+
+### 🔹 Investigate Suspicious Domains
+![Investigate Suspicious Domains](project-screenshots/Investigate%20Suspicious%20Domains.PNG)
+
 
 ## Conclusion
 Analyzing DNS log files using Splunk SIEM enables security analysts to:
