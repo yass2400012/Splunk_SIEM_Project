@@ -1,0 +1,6 @@
+2025-05-28T12:00:01Z src_ip=192.168.1.100 dst_ip=8.8.8.8 fqdn=example.com query_type=A response_code=NOERROR
+2025-05-28T12:01:45Z src_ip=192.168.1.101 dst_ip=8.8.4.4 fqdn=maliciousdomain.com query_type=A response_code=NXDOMAIN
+2025-05-28T12:03:10Z src_ip=192.168.1.102 dst_ip=1.1.1.1 fqdn=openai.com query_type=AAAA response_code=NOERROR
+2025-05-28T12:04:55Z src_ip=192.168.1.103 dst_ip=8.8.8.8 fqdn=badsite.ru query_type=MX response_code=SERVFAIL
+2025-05-28T12:06:22Z src_ip=192.168.1.104 dst_ip=8.8.4.4 fqdn=google.com query_type=NS response_code=NOERROR
+2025-05-28T12:08:00Z src_ip=192.168.1.105 dst_ip=1.0.0.1 fqdn=example.net query_type=CNAME response_code=NOERROR
