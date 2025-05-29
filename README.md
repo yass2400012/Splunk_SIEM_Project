@@ -31,9 +31,9 @@ index=* sourcetype=dns_sample | top fqdn, src_ip
 ```spl
 index=* sourcetype=dns_sample fqdn="maliciousdomain.com"
 
+---
 
-
-
+---
 
 ## Sample Queries Breakdown
 
@@ -49,7 +49,7 @@ index=dns_index sourcetype=dns_sample
 ```spl
 index=dns_index sourcetype=dns_sample | top src_ip where fqdn="*.maliciousdomain.com"
 
-
+---
 
 
 ##Screenshots
