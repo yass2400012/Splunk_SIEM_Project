@@ -41,26 +41,20 @@ index=* sourcetype=dns_sample fqdn="maliciousdomain.com"
 
 ➤ Search all DNS log entries
 ```spl
-index=dns_index sourcetype=dns_sample
+source="dns.log" host="yass" sourcetype="dns"
 ```
 
 ➤ Get count of each FQDN
 ```spl
-index=dns_index sourcetype=dns_sample
+source="dns.log" host="yass" sourcetype="dns"
+| rex field=_raw "^(?<timestamp>\S+)\s+\S+\s+(?<src_ip>\d{1,3}(?:\.\d{1,3}){3})\s+\S+\s+(?<dest_ip>\d{1,3}(?:\.\d{1,3}){3})\s+\S+\s+\S+\s+\S+\s+(?<fqdn>[^\s]+)\s+\S+\s+\S+\s+\S+\s+(?<query_type>[^\s]+)\s+\S+\s+(?<response_code>[^\s]+)"
+| table timestamp, src_ip, dest_ip, fqdn, query_type, response_code
 ```
 
 ➤ Top 10 IPs querying suspicious domains
 ```spl
-index=dns_index sourcetype=dns_sample | top src_ip where fqdn="*.maliciousdomain.com"
+source="dns_sample_with_malicious.log" host="yass" sourcetype="dns_sample_with_malicious"
 ```
-
-##Screenshots
-
-🔹 Splunk Dashboard View
-
-🔹 DNS Events Table
-
-🔹 Top Queried Domains Chart
 
 
 ## Skills Demonstrated
