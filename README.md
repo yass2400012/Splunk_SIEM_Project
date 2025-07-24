@@ -89,4 +89,4 @@ Investigate suspicious traffic
 
 
 ## Conclusion
-Working with DNS log files in Splunk helped me better understand how DNS activity can reveal signs of suspicious or malicious behavior. This project gave me hands-on experience with log analysis, regex filtering, and using Splunk search queries—skills I’m continuing to build as I grow in cybersecurity.
+Working with DNS log files in Splunk to understand how DNS activity can reveal signs of suspicious or malicious behavior. provided hands-on experience with log analysis, regex filtering, and using Splunk search queries—skills.
