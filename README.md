@@ -10,14 +10,14 @@ This project demonstrates how to use Splunk Enterprise Security (ES) and Splunk 
 
 These exercises showcase SIEM configuration, log analysis, and adversary detection workflows that SOC analysts use in real-world environments.
 
-## 🔎 DNS Log Analysis in Splunk
+## DNS Log Analysis in Splunk
 
 ### 1. Search DNS Events
 ```spl
 index=* sourcetype=dns_sample
 ```
 
-### 🔹 Search DNS Events
+### Search DNS Events
 ![Search DNS Events](project-screenshots/Search%20DNS%20Events.PNG)
 
 ### 2. Extract Relevant Fields Using Regex
@@ -25,7 +25,7 @@ index=* sourcetype=dns_sample
 index=* sourcetype=dns_sample | regex _raw="(?i)\\b(dns|domain|query|response|port 53)\\b"
 ```
 
-### 🔹 Extract Relevant Fields Using Regex
+### Extract Relevant Fields Using Regex
 ![Extract Relevant Fields](project-screenshots/Extract%20Relevant%20Fields%20Using%20Regex.PNG)
 
 ### 3. Identify Anomalies (Query Spikes)
@@ -37,14 +37,14 @@ index=* sourcetype=dns_sample | stats count by fqdn
 ```spl
 index=* sourcetype=dns_sample | top fqdn, src_ip
 ```
-### 🔹 Extracting DNS Log Fields in Splunk
+### Extracting DNS Log Fields in Splunk
 ![Extracting DNS Log Fields](project-screenshots/Extracting%20DNS%20Log%20Fields%20in%20Splunk.PNG)
 
 ### 5. Investigate Suspicious Domains
 ```spl
 index=* sourcetype=dns_sample fqdn="maliciousdomain.com"
 ```
-### 🔹 Investigate Suspicious Domains
+### Investigate Suspicious Domains
 ![Investigate Suspicious Domains](project-screenshots/Investigate%20Suspicious%20Domains.PNG)
 
 ## Part 2: Risk-Based Alerting (RBA) with MITRE ATT&CK
