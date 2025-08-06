@@ -5,10 +5,10 @@
 
 This project demonstrates how to use Splunk Enterprise Security (ES) and Splunk Security Essentials (SSE) to perform two critical security functions:
 
-Analyzing DNS Logs – Detecting anomalies, suspicious queries, and potential malicious domains.
-Risk-Based Alerting (RBA) with MITRE ATT&CK Mapping – Assigning risk scores to attacker techniques such as PowerShell, Mimikatz, and WMIexec, and aligning detections with the MITRE ATT&CK framework.
+• Analyzing DNS Logs – Detecting anomalies, suspicious queries, and potential malicious domains.
+• Risk-Based Alerting (RBA) with MITRE ATT&CK Mapping – Assigning risk scores to attacker techniques such as PowerShell, Mimikatz, and WMIexec, and aligning detections with the MITRE ATT&CK framework.
+
 These exercises showcase SIEM configuration, log analysis, and adversary detection workflows that SOC analysts use in real-world environments.
----
 
 ## 🔎 DNS Log Analysis in Splunk
 
