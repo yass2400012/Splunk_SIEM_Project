@@ -72,13 +72,14 @@ Examples configured:
 
 • High-Risk User Alert (score ≥ 60)
 
-Screenshot: Risk Rules with Custom Content in Splunk SSE
+![Extract Relevant Fields](project-screenshots/Risk%20Rules%20with%20Custom%20Content%20Splunk%20Security%20Essentials.PNG)
 
 
 ## Step 2: MITRE ATT&CK Mapping
 Each detection was mapped to MITRE ATT&CK tactics and techniques for adversary emulation.
 
-MITRE ATT&CK Framework
+## MITRE ATT&CK Framework:
+![Extract Relevant Fields](project-screenshots/MITRE%20ATT%26CK%20Framework.PNG)
 
 | Technique ID | Technique Name                    | Tactic            | Status  |
 | ------------ | --------------------------------- | ----------------- | ------- |
@@ -89,7 +90,7 @@ MITRE ATT&CK Framework
 ## Step 3: Coverage Analysis
 Using the MITRE ATT&CK Benchmark dashboard, I validated coverage and visualized detection alignment.
 
-Screenshot: MITRE ATT&CK Benchmark
+![Extract Relevant Fields](project-screenshots/MITRE%20ATT%26CK%20Benchmark%202.PNG)
 
 • 10 Techniques selected
 
@@ -109,7 +110,8 @@ The SSE Overview Dashboard provided high-level visibility:
 
 • Use cases by Security Data Journey
 
-📸 Screenshot: Overview SSE
+## Overview SSE:
+![Extract Relevant Fields](project-screenshots/Overview%20SSE.PNG)
 
 
 ## Skills Demonstrated
