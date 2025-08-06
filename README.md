@@ -5,8 +5,8 @@
 
 This project demonstrates how to use Splunk Enterprise Security (ES) and Splunk Security Essentials (SSE) to perform two critical security functions:
 
-• Analyzing DNS Logs – Detecting anomalies, suspicious queries, and potential malicious domains.
-• Risk-Based Alerting (RBA) with MITRE ATT&CK Mapping – Assigning risk scores to attacker techniques such as PowerShell, Mimikatz, and WMIexec, and aligning detections with the MITRE ATT&CK framework.
+### • Analyzing DNS Logs: Detecting anomalies, suspicious queries, and potential malicious domains.
+### • Risk-Based Alerting (RBA) with MITRE ATT&CK Mapping: Assigning risk scores to attacker techniques such as PowerShell, Mimikatz, and WMIexec, and aligning detections with the MITRE ATT&CK framework.
 
 These exercises showcase SIEM configuration, log analysis, and adversary detection workflows that SOC analysts use in real-world environments.
 
@@ -65,8 +65,11 @@ index=windows EventCode=4104
 Examples configured:
 
 • PowerShell Execution (T1059) → risk_score=20
+
 • Credential Dumping – Mimikatz (T1003) → risk_score=30
+
 • Remote Execution – WMIexec (T1047) → risk_score=40
+
 • High-Risk User Alert (score ≥ 60)
 
 Screenshot: Risk Rules with Custom Content in Splunk SSE
@@ -89,15 +92,21 @@ Using the MITRE ATT&CK Benchmark dashboard, I validated coverage and visualized 
 Screenshot: MITRE ATT&CK Benchmark
 
 • 10 Techniques selected
+
 • Coverage shown via potential detections
+
 • Identified improvements for better coverage
 
 
 ## Step 4: Security Essentials Overview
 The SSE Overview Dashboard provided high-level visibility:
+
 • of datasources configured
+
 • of detections created
+
 • Top MITRE ATT&CK tactics covered
+
 • Use cases by Security Data Journey
 
 📸 Screenshot: Overview SSE
@@ -119,6 +128,9 @@ The SSE Overview Dashboard provided high-level visibility:
 ## Conclusion
 This project provided hands-on experience with Splunk SIEM, from DNS log analysis to risk-based alerting aligned with MITRE ATT&CK.
 Through configuring detections, assigning risk scores, and benchmarking ATT&CK coverage, I gained practical skills in:
+
 • Security monitoring
+
 • Detection engineering
+
 • Threat hunting workflows
